@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <title>6-8 reg</title>
         <link rel="stylesheet" media="screen" href="reg.css" />
     </head>
     <body> 
+       
         <div><h1> REGISTER </h1></div>
          
 
@@ -19,9 +21,10 @@
             <label for="category">Category 2 (Class 9-12)</label>
         </div>
 
-
+        <form id="regForm">
+        
          
-             <div class="tab part1 ip">
+             <div class="tab ip">
               
                 <div><h3>Participant 1 Details</h3></div>
                 <label for="name1" class="teamname">
@@ -47,7 +50,7 @@
                 
              </div>
 
-             <div class="tab part2 ip">
+             <div class="tab ip">
                 
                     <div><h3>Guardian Details</h3></div>
                     <label for="gname" class="teamname">
@@ -73,7 +76,7 @@
                     
              </div>
 
-             <div class="tab part3 ip">
+             <div class="tab ip">
                 
                     <div><h3>Participant 2 Details</h3></div>
                     <label for="name2" class="teamname">
@@ -109,7 +112,7 @@
              </div>
         
         
-            <div class="tab part4 ip">
+            <div class="tab ip">
                     <div><h3>Participant 3 Details</h3></div>
                     <label for="name3" class="teamname">
                         <span class="TName">Name</span>
@@ -143,7 +146,7 @@
                     <br>
             </div>       
             
-            <div class="tab part5 ip">
+            <div class="tab ip">
                 <div><h3>Participant 4 Details</h3></div>
                 <label for="name4" class="teamname">
                     <span class="TName">Name</span>
@@ -177,7 +180,7 @@
                 <br>
             </div>
 
-            <div class="tab part6 ip">
+            <div class="tab ip">
                 <div><h3>Participant 5 Details</h3></div>
                 <label for="name5" class="teamname">
                     <span class="TName">Name</span>
@@ -210,6 +213,22 @@
                 <input type="number" name="ph5" placeholder="Enter mobile no here" autocomplete="off" required />
                 <br>
             </div>
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+            </div>
+            <div style="overflow:auto;">
+              <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+              </div>
+            </div>  
+        </form>
+        <script type="text/javascript" src="main.js"></script>    
               
     </body>
     
