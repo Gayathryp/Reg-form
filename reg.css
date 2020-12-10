@@ -6,40 +6,52 @@
 }
 body{
     text-align: center;
+    background-color: black;
 }
-/*.tab{
-    display: none;
-}*/
 
-/*h1{
+h1{
     text-align: center;
     color: white;
-}*/
+    margin-top: 5%;
+}
 h1::first-letter{
     color: orangered;
 }
-
+.radio input{
+  margin: 3%;
+}
+.radio input:nth-child(1){
+  margin-top: 6.5%;
+}
+.radio label{
+  color: orangered;
+  font-size: 17px;
+}
 h3{
     text-align: center;
-    margin-top: 2em;
+    margin: 5%;
+    color: white;
 }
 h3::first-letter{
     color: orangered;
 } 
-
+t{
+   margin: 2.5%;
+}
 span{
                 
     color: orangered;
        
 }
+
 .ip input{
-    width: 40%;
+    width: 45%;
     border-radius: 5px;
     padding: 7px;
 }
 
 #regForm {
-  background-color: #ffffff;
+  background-color:rgb(61, 52, 52);
   margin: 100px auto;
   font-family: Raleway;
   padding: 40px;
@@ -57,7 +69,7 @@ input.invalid {
 }
 
 button {
-  background-color: green;
+  background-color: orangered;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -71,7 +83,7 @@ button:hover {
 }
 
 #prevBtn {
-  background-color: blue;
+  background-color:orangered;
 }
 
 /* Make circles that indicate the steps of the form: */
@@ -87,11 +99,12 @@ button:hover {
 }
 
 .step.active {
-  opacity: 1;
+  opacity: 0.8;
+  background-color: orangered;
 }
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #4CAF50;
+  background-color: orangered;
 }
 
