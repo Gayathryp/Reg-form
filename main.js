@@ -1,6 +1,36 @@
+/*if(document.getElementById("#category2").checked=true)
+{
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
-
+}
+if(document.getElementById("#category2").checked=true)
+{
+  var currentTab = 0; // Current tab is set to be the first tab (0)
+  showTab2(currentTab); // Display the current tab
+  }
+  function showtab2{
+    // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab2");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  
+  const nextBtn=document.querySelector("#nextBtn");
+  if (n==(x.length-1)){
+    nextBtn.classList.add("hide");
+  }
+  const submitBtn2=document.querySelector("#submitBtn2");
+  
+  
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+  }*/
+  var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
 function showTab(n) {
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
@@ -11,13 +41,20 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
-  if (n==(x.length-1)){
+  /*if (n==(x.length-1)){
     document.getElementById("nextBtn").innerHTML = "Submit";
   }
   else {
     document.getElementById("nextBtn").innerHTML = "Next";
+  }*/
+  const nextBtn=document.querySelector("#nextBtn");
+  if (n==(x.length-1)){
+    nextBtn.classList.add("hide");
   }
-  
+  const submitBtn=document.querySelector("#submitBtn");
+  if(n==(x.length-3)){
+    submitBtn.classList.remove("hide");
+  }
   
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)

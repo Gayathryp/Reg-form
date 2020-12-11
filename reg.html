@@ -17,14 +17,14 @@
 
 
         <div class="radio">
-            <input type="radio" name="category" id="category1" required>
+            <input type="radio" name="category" onclick="cat2()" id="category2" required>
             <label for="category">CATEGORY 2 (Class 9-12)</label>
         </div>
 
         <form id="regForm">
         
          
-             <div class="tab ip">
+             <div class="tab tab2 ip">
               
                 <div><h3>Participant 1 Details</h3></div>
                 <label for="name1" class="teamname">
@@ -47,10 +47,20 @@
                 </label> <br>
                 <input type="text" name="state1" placeholder="Enter your state here" autocomplete="off" required />
                 <br>
+                <label for="mail1" class="teamname">
+                    <span class="TName">Email</span>
+                </label> <br>
+                <input type="email" name="mail1" placeholder="Enter mail id here" autocomplete="off" required />
+                <br>
+                <label for="Ph1" class="teamname">
+                    <span class="TName">Phone no</span>
+                </label> <br>
+                <input type="number" name="ph1" placeholder="Enter mobile no here" autocomplete="off" required />
+                <br>
                 
              </div>
 
-             <div class="tab ip">
+             <div class="tab tab2 ip">
                 
                     <div><h3>Guardian Details</h3></div>
                     <label for="gname" class="teamname">
@@ -59,7 +69,7 @@
                     <input type="text" name="gname" placeholder="Enter name here" autocomplete="off" required />
                     <br>
                     <label for="relation" class="teamname">
-                        <span class="TName">School</span>
+                        <span class="TName">Relation</span>
                     </label> <br>
                     <input type="text" name="relation" placeholder="Enter relation here" autocomplete="off" required />
                     <br>
@@ -76,7 +86,7 @@
                     
              </div>
 
-             <div class="tab ip">
+             <div class="tab tab2 ip">
                 
                     <div><h3>Participant 2 Details</h3></div>
                     <label for="name2" class="teamname">
@@ -219,12 +229,15 @@
                 <span class="step"></span>
                 <span class="step"></span>
                 <span class="step"></span>
+                <span class="step"></span>
               </div>
             </div>
             <div style="overflow:auto;">
               <div style="float:right;">
                 <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                <button type="button"  id="nextBtn" onclick="nextPrev(1)">Next</button>
+                <button type="button" id="submitBtn" class="hide" onclick="submit()">Submit</button>
+                
               </div>
             </div>  
         </form>
