@@ -4,21 +4,19 @@
     <head>
         <title>6-8 reg</title>
         <link rel="stylesheet" media="screen" href="reg.css" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     </head>
     <body> 
        
-        <div><h1> REGISTER </h1></div>
+        <div><h1> REGISTER </h1></div><br>
          
+        <div class="radio" div align="center">
 
-        <div class="radio">
-            <input type="radio" name="category" id="category1" required>
-            <label for="category">CATEGORY 1 (Class 6-8)</label>
-        </div>
-
-
-        <div class="radio">
-            <input type="radio" name="category" onclick="cat2()" id="category2" required>
-            <label for="category">CATEGORY 2 (Class 9-12)</label>
+            <div><h2> Which class do you study in? </h2></div><br>
+            <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+            <label for="toggle-on" class="btn"><b>6-8</b></label>
+            <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+            <label for="toggle-off" class="btn"><b>9-12</b></label>
         </div>
 
         <form id="regForm">
@@ -29,32 +27,32 @@
                 <div><h2>Participant 1 Details</h2></div>
                 <label for="name1" class="teamname">
                     <span class="TName"><h3>Name</h3></span>
-                </label> <br>
+                </label>
                 <input  type="text" name="name1" placeholder="Enter your name here" autocomplete="off" required />
                 <br>
                 <label for="school1" class="teamname">
                     <span class="TName"><h3>School</h3></span>
-                </label> <br>
+                </label> 
                 <input type="text" name="school1" placeholder="Enter your school name here" autocomplete="off" required />
                 <br>
                 <label for="city1" class="teamname">
                     <span class="TName"><h3>City</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="city1" placeholder="Enter your city here" autocomplete="off" required />
                 <br>
                 <label for="state1" class="teamname">
                     <span class="TName"><h3>State</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="state1" placeholder="Enter your state here" autocomplete="off" required />
                 <br>
                 <label for="mail1" class="teamname">
                     <span class="TName"><h3>Email</h3></span>
-                </label> <br>
+                </label>
                 <input type="email" name="mail1" placeholder="Enter mail id here" autocomplete="off" required />
                 <br>
                 <label for="Ph1" class="teamname">
                     <span class="TName"><h3>Phone no</h3></span>
-                </label> <br>
+                </label>
                 <input type="number" name="ph1" placeholder="Enter mobile no here" autocomplete="off" required />
                 <br>
                 
@@ -65,22 +63,22 @@
                     <div><h2>Guardian Details</h2></div>
                     <label for="gname" class="teamname">
                         <span class="TName"><h3>Name</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="text" name="gname" placeholder="Enter name here" autocomplete="off" required />
                     <br>
                     <label for="relation" class="teamname">
                         <span class="TName"><h3>Relation</h3></span>
-                    </label> <br>
+                    </label> 
                     <input type="text" name="relation" placeholder="Enter relation here" autocomplete="off" required />
                     <br>
                     <label for="mail1" class="teamname">
                         <span class="TName"><h3>Email</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="email" name="mail1" placeholder="Enter mail id here" autocomplete="off" required />
                     <br>
                     <label for="Ph1" class="teamname">
                         <span class="TName"><h3>Phone no</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="number" name="ph1" placeholder="Enter mobile no here" autocomplete="off" required />
                     <br>
                     
@@ -91,32 +89,32 @@
                     <div><h2>Participant 2 Details</h2></div>
                     <label for="name2" class="teamname">
                         <span class="TName"><h3>Name</h3></span>
-                    </label> <br>
+                    </label> 
                     <input type="text" name="name2" placeholder="Enter your name here" autocomplete="off" required />
                     <br>
                     <label for="school2" class="teamname">
                         <span class="TName"><h3>School</h3></span>
-                    </label> <br>
+                    </label> 
                     <input type="text" name="school2" placeholder="Enter your school name here" autocomplete="off" required />
                     <br>
                     <label for="city2" class="teamname">
                         <span class="TName"><h3>City</h3></span>
-                    </label> <br>
+                    </label> 
                     <input type="text" name="city2" placeholder="Enter your city here" autocomplete="off" required />
                     <br>
                     <label for="state2" class="teamname">
                         <span class="TName"><h3>State</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="text" name="state2" placeholder="Enter your state here" autocomplete="off" required />
                     <br>
                     <label for="mail2" class="teamname">
                         <span class="TName"><h3>Email</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="email" name="mail2" placeholder="Enter mail id here" autocomplete="off" required />
                     <br>
                     <label for="Ph2" class="teamname">
                         <span class="TName"><h3>Phone no</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="number" name="ph2" placeholder="Enter mobile no here" autocomplete="off" required />
                     <br>
              </div>
@@ -126,32 +124,32 @@
                     <div><h2>Participant 3 Details</h2></div>
                     <label for="name3" class="teamname">
                         <span class="TName"><h3>Name</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="text" name="name3" placeholder="Enter your name here" autocomplete="off" required />
                     <br>
                     <label for="school3" class="teamname">
                         <span class="TName"><h3>School</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="text" name="school3" placeholder="Enter your school name here" autocomplete="off" required />
                     <br>
                     <label for="city3" class="teamname">
                         <span class="TName"><h3>City</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="text" name="city3" placeholder="Enter your city here" autocomplete="off" required />
                     <br>
                     <label for="state3" class="teamname">
                         <span class="TName"><h3>State</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="text" name="state3" placeholder="Enter your state here" autocomplete="off" required />
                     <br>
                     <label for="mail3" class="teamname">
                         <span class="TName"><h3>Email</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="email" name="mail3" placeholder="Enter mail id here" autocomplete="off" required />
                     <br>
                     <label for="Ph3" class="teamname">
                         <span class="TName"><h3>Phone no</h3></span>
-                    </label> <br>
+                    </label>
                     <input type="number" name="ph3" placeholder="Enter mobile no here" autocomplete="off" required />
                     <br>
             </div>       
@@ -160,32 +158,32 @@
                 <div><h2>Participant 4 Details</h2></div>
                 <label for="name4" class="teamname">
                     <span class="TName"><h3>Name</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="name4" placeholder="Enter your name here" autocomplete="off" required />
                 <br>
                 <label for="school4" class="teamname">
                     <span class="TName"><h3>School</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="school4" placeholder="Enter your school name here" autocomplete="off" required />
                 <br>
                 <label for="city4" class="teamname">
                     <span class="TName"><h3>City</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="city4" placeholder="Enter your city here" autocomplete="off" required />
                 <br>
                 <label for="state4" class="teamname">
                     <span class="TName"><h3>State</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="state4" placeholder="Enter your state here" autocomplete="off" required />
                 <br>
                 <label for="mail4" class="teamname">
                     <span class="TName"><h3>Email</h3></span>
-                </label> <br>
+                </label>
                 <input type="email" name="mail4" placeholder="Enter mail id here" autocomplete="off" required />
                 <br>
                 <label for="Ph4" class="teamname">
                     <span class="TName"><h3>Phone no</h3></span>
-                </label> <br>
+                </label>
                 <input type="number" name="ph4" placeholder="Enter mobile no here" autocomplete="off" required />
                 <br>
             </div>
@@ -194,32 +192,32 @@
                 <div><h2>Participant 5 Details</h2></div>
                 <label for="name5" class="teamname">
                     <span class="TName"><h3>Name</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="name5" placeholder="Enter your name here" autocomplete="off" required />
                 <br>
                 <label for="school5" class="teamname">
                     <span class="TName"><h3>School</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="school5" placeholder="Enter your school name here" autocomplete="off" required />
                 <br>
                 <label for="city5" class="teamname">
                     <span class="TName"><h3>City</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="city5" placeholder="Enter your city here" autocomplete="off" required />
                 <br>
                 <label for="state5" class="teamname">
                     <span class="TName"><h3>State</h3></span>
-                </label> <br>
+                </label>
                 <input type="text" name="state5" placeholder="Enter your state here" autocomplete="off" required />
                 <br>
                 <label for="mail5" class="teamname">
                     <span class="TName"><h3>Email</h3></span>
-                </label> <br>
+                </label>
                 <input type="email" name="mail5" placeholder="Enter mail id here" autocomplete="off" required />
                 <br>
                 <label for="Ph5" class="teamname">
                     <span class="TName"><h3>Phone no</h3></span>
-                </label> <br>
+                </label>
                 <input type="number" name="ph5" placeholder="Enter mobile no here" autocomplete="off" required />
                 <br>
             </div>
