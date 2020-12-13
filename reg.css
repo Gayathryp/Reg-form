@@ -155,8 +155,8 @@ input.invalid {
 }
 
 button {
-  background-color: #FFCD58;
-  color: black;
+  background-color: #292725;
+  color: white;
   border: none;
   padding: 10px 20px;
   font-size: 17px;
@@ -169,11 +169,11 @@ button:hover {
 }
 
 #prevBtn {
-  background-color:#DAD870;
+  background-color:#4a4a47;
 }
 
 #submitBtn{
-  background-color:#FF9636;
+  background-color:#000000;
 }
 
 /* Make circles that indicate the steps of the form:CD212A */
