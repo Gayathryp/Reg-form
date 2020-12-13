@@ -6,7 +6,7 @@
 }
 body{
     
-    background: #e95320;
+    background: black;
     align-items: center;
     min-height: 100%;
     font-family: 'Poppins';
@@ -69,6 +69,8 @@ input::-webkit-inner-spin-button {
   align-items: :center;
   -webkit-transition: background 600ms ease, color 600ms ease;
   transition: background 600ms ease, color 600ms ease;
+  color: #e95320;
+  border-color: #101820FF;
 }
 
 input[type="radio"].toggle {
@@ -81,10 +83,11 @@ input[type="radio"].toggle + label {
 }
 input[type="radio"].toggle + label:hover {
   background: none;
-  color: #1a1a1a;
+  color: #e95320;
 }
 input[type="radio"].toggle + label:after {
-  background: #1a1a1a;
+  background: #FEE715FF;
+  color: #1a1a1a;
   content: "";
   height: 100%;
   position: absolute;
@@ -108,7 +111,7 @@ input[type="radio"].toggle.toggle-right + label:after {
 }
 input[type="radio"].toggle:checked + label {
   cursor: default;
-  color: #fff;
+  color: #1a1a1a;
   -webkit-transition: color 200ms;
   transition: color 200ms;
 }
@@ -123,7 +126,7 @@ input[type="radio"].toggle:checked + label:after {
 
 /* reg form layout*/
 #regForm {
-  background-color: #bfc700;
+  background-color: #ff4500;
   margin: 40px auto;
   padding: 40px;
   width:60%;
@@ -137,7 +140,7 @@ input {
   width: 95%;
   font-size: 17px;
   font-family: Poppins;
-  border: 1px solid #black;
+  border: black;
   border-radius: 25px;
   border-bottom: 3px;
 }
@@ -152,12 +155,12 @@ input.invalid {
 }
 
 button {
-  background-color: #9B2335;
-  color: #ffffff;
+  background-color: #FFCD58;
+  color: black;
   border: none;
   padding: 10px 20px;
   font-size: 17px;
-  font-family: Raleway;
+  font-family: Poppins;
   cursor: pointer;
 }
 
@@ -166,11 +169,11 @@ button:hover {
 }
 
 #prevBtn {
-  background-color:#BC243C;
+  background-color:#DAD870;
 }
 
 #submitBtn{
-  background-color:#9C4722;
+  background-color:#FF9636;
 }
 
 /* Make circles that indicate the steps of the form:CD212A */
@@ -178,7 +181,7 @@ button:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #955251;
+  background-color: #D3D3CB;
   border: none;  
   border-radius: 50%;
   display: inline-block;
@@ -187,11 +190,11 @@ button:hover {
 
 .step.active {
   opacity: 0.8;
-  background-color: #DD4124;
+  background-color: #9F2B00;
 }
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #DD4124;
+  background-color: #9F2B00;
 }
 
