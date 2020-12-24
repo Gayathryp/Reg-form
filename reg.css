@@ -1,63 +1,46 @@
-
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    
-    background: black;
-    align-items: center;
-    min-height: 100%;
-    font-family: 'Poppins';
+body {
+  background: black;
+  align-items: center;
+  min-height: 100%;
+  font-family: "Poppins";
 }
 
-
-.hide{
-  display:none;
+.hide {
+  display: none;
 }
 
-h1{
-    text-align: center;
-    color: #EDF1FF;
-    margin-top: 4%;
-    font-size: 50px;
+h1 {
+  text-align: center;
+  color: #edf1ff;
+  margin-top: 4%;
+  font-size: 50px;
 }
 
-h2{
-    text-align: center;
-    color: white;
-    margin-top: 3%;
+h2 {
+  text-align: center;
+  color: white;
+  margin-top: 3%;
 }
 
-
-h3{
-    margin-top: 2%;
-    color: black;
-    font-family: 'Poppins';
+h3 {
+  margin-top: 2%;
+  color: black;
+  font-family: "Poppins";
 }
-
-} 
-span{
-                
-    color: orangered;
-       
+span {
+  color: orangered;
 }
-
-
 
 /* remove step button from input number */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-
-
-
-
-
 
 /* radio button layout*/
 .btn {
@@ -66,11 +49,11 @@ input::-webkit-inner-spin-button {
   padding: 10px;
   text-align: center;
   position: relative;
-  align-items: :center;
+  align-items: center;
   -webkit-transition: background 600ms ease, color 600ms ease;
   transition: background 600ms ease, color 600ms ease;
   color: #e95320;
-  border-color: #101820FF;
+  border-color: #101820ff;
 }
 
 input[type="radio"].toggle {
@@ -83,11 +66,11 @@ input[type="radio"].toggle + label {
 }
 input[type="radio"].toggle + label:hover {
   background: none;
-  color: #e95320;
+  color: white;
 }
 input[type="radio"].toggle + label:after {
-  background: #FEE715FF;
-  color: #1a1a1a;
+  background: orangered;
+  color: white;
   content: "";
   height: 100%;
   position: absolute;
@@ -111,7 +94,7 @@ input[type="radio"].toggle.toggle-right + label:after {
 }
 input[type="radio"].toggle:checked + label {
   cursor: default;
-  color: #1a1a1a;
+  color: white;
   -webkit-transition: color 200ms;
   transition: color 200ms;
 }
@@ -119,17 +102,12 @@ input[type="radio"].toggle:checked + label:after {
   left: 0;
 }
 
-
-
-
-
-
 /* reg form layout*/
 #regForm {
   background-color: #ff4500;
   margin: 40px auto;
   padding: 40px;
-  width:60%;
+  width: 60%;
   min-width: 200px;
   max-width: 400px;
   text-align: left;
@@ -169,11 +147,11 @@ button:hover {
 }
 
 #prevBtn {
-  background-color:#4a4a47;
+  background-color: #4a4a47;
 }
 
-#submitBtn{
-  background-color:#000000;
+#submitBtn {
+  background-color: #000000;
 }
 
 /* Make circles that indicate the steps of the form:CD212A */
@@ -181,8 +159,8 @@ button:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #D3D3CB;
-  border: none;  
+  background-color: #d3d3cb;
+  border: none;
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5;
@@ -190,11 +168,10 @@ button:hover {
 
 .step.active {
   opacity: 0.8;
-  background-color: #9F2B00;
+  background-color: #9f2b00;
 }
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #9F2B00;
+  background-color: #9f2b00;
 }
-

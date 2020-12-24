@@ -61,6 +61,8 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
+
+  category();
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
@@ -110,3 +112,29 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+const category = function () {
+  const buttons = document.querySelectorAll(".buttons");
+  const tab = document.querySelectorAll(".tab");
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      const inputCategory = document.querySelector("input[name=toggle]:checked").value;
+      if (inputCategory == "true") {
+        if (currentTab == 2) {
+          nextBtn.classList.add("hide");
+          submitBtn.classList.remove("hide");
+        } else {
+          nextBtn.classList.remove("hide");
+          submitBtn.classList.add("hide");
+        }
+      } else {
+        if (currentTab == 5) {
+          nextBtn.classList.add("hide");
+          submitBtn.classList.remove("hide");
+        } else {
+          nextBtn.classList.remove("hide");
+        }
+      }
+    });
+  });
+};
