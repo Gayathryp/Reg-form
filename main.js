@@ -136,7 +136,47 @@ const category = function () {
           nextBtn.classList.remove("hide");
           submitBtn.classList.add("hide");
         }
-      } else {
+      }
+        else {
+        if (currentTab == 5) {
+          nextBtn.classList.add("hide");
+          submitBtn.classList.remove("hide");
+        } else {
+          nextBtn.classList.remove("hide");
+        }
+      }
+    });
+  });
+};
+
+
+
+
+
+
+
+function cat()
+{
+  const buttons = document.querySelectorAll(".buttons");
+  const tab = document.querySelectorAll(".tab");
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      const inputCategory = document.querySelector("input[name=toggle]:checked").value;
+      if (inputCategory == "true") {
+        if (currentTab == 1) {
+          nextBtn.classList.remove("hide");
+          submitBtn.classList.remove("hide");
+        }
+        else if (currentTab == 2){
+          nextBtn.classList.add("hide");
+          submitBtn.classList.remove("hide"); 
+        }
+         else {
+          nextBtn.classList.remove("hide");
+          submitBtn.classList.add("hide");
+        }
+      }
+        else {
         if (currentTab == 5) {
           nextBtn.classList.add("hide");
           submitBtn.classList.remove("hide");
