@@ -51,8 +51,12 @@ function showTab(n) {
   if (n==(x.length-1)){
     nextBtn.classList.add("hide");
   }
+  
   const submitBtn=document.querySelector("#submitBtn");
-  if(n==(x.length-3)){
+  if ((n<=x.length-3)){
+    submitBtn.classList.add("hide");
+  }
+  if(n>=(x.length-3)){
     submitBtn.classList.remove("hide");
   }
   
@@ -120,10 +124,15 @@ const category = function () {
     button.addEventListener("click", function () {
       const inputCategory = document.querySelector("input[name=toggle]:checked").value;
       if (inputCategory == "true") {
-        if (currentTab == 2) {
-          nextBtn.classList.add("hide");
+        if (currentTab == 1) {
+          nextBtn.classList.remove("hide");
           submitBtn.classList.remove("hide");
-        } else {
+        }
+        else if (currentTab == 2){
+          nextBtn.classList.add("hide");
+          submitBtn.classList.remove("hide"); 
+        }
+         else {
           nextBtn.classList.remove("hide");
           submitBtn.classList.add("hide");
         }
